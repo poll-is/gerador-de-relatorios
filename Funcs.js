@@ -1,66 +1,22 @@
-/*function getLastInteractionTime() {
-  var parameters = ["classroom:timestamp_last_interaction"];
-  var pageToken;
-  var page;
-  var rows = [];
-  var today = new Date();
-  var four_days_ago = new Date(today.getTime() - 4 * 24 * 60 * 60 * 1000);
-  var timezone = Session.getScriptTimeZone();
-  var date = Utilities.formatDate(four_days_ago, timezone, "yyyy-MM-dd");
+// Copyright (C) 2020 Terra Digital
 
-  do {
-    page = AdminReports.UserUsageReport.get("all", date, {
-      parameters: parameters.join(","),
-      maxResults: 500,
-      pageToken: pageToken,
-    });
-    if (page.warnings) {
-      for (var i = 0; i < page.warnings.length; i++) {
-        var warning = page.warnings[i];
-        Logger.log(warning.message);
-      }
-    }
-    var reports = page.usageReports;
-    if (reports) {
-      for (var i = 0; i < reports.length; i++) {
-        var report = reports[i];
-        //var parameterValues = getParameterValues(report.parameters);
-        var row = [
-          report.date,
-          report.entity.userEmail,
-          report.parameters[0].datetimeValue,
-          //parameterValues["classroom:timestamp_last_interaction"],
-        ];
-        rows.push(row);
-      }
-    }
-    pageToken = page.nextPageToken;
-  } while (pageToken);
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
 
-  if (rows.length > 0) {
-    var spreadsheet = SpreadsheetApp.create(
-      "Relatórios dos usuários - Classroom"
-    );
-    var sheet = spreadsheet.getActiveSheet();
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
 
-    // Append the headers.
-    var headers = ["Data", "Usuário", "Última interação"];
-    sheet.appendRow(headers);
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-    // Append the results.
-    sheet.getRange(2, 1, rows.length, headers.length).setValues(rows);
-
-    //Logger.log("Relatório criado: %s", spreadsheet.getUrl());
-  } else {
-    Logger.log("Nenhum resultado.");
-  }
-}*/
 
 function addToSpreadsheet(sheetName, ln, data) {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  /*var spreadsheet = SpreadsheetApp.openByUrl(
-    "https://docs.google.com/spreadsheets/d/14tYlD7mI5lVobF4xmv1vknRdas-XoUqAxHR6HlBCk44/edit"
-  );*/
+
   var sheet = spreadsheet.getSheetByName(sheetName);
   sheet.clearContents();
   if (sheetName == "Salas de aula") {
@@ -251,22 +207,3 @@ function getStudents(course_id) {
   }
   return res;
 }
-/*
-function getParameterValues(parameters) {
-  return parameters.reduce(function (result, parameter) {
-    var name = parameter.name;
-    var value;
-    if (parameter.intValue !== undefined) {
-      value = parameter.intValue;
-    } else if (parameter.stringValue !== undefined) {
-      value = parameter.stringValue;
-    } else if (parameter.datetimeValue !== undefined) {
-      value = new Date(parameter.datetimeValue);
-    } else if (parameter.boolValue !== undefined) {
-      value = parameter.boolValue;
-    }
-    result[name] = value;
-    return result;
-  }, {});
-}
-*/
