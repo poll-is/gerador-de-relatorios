@@ -39,4 +39,27 @@ Atribuições | num_assignments
 Comunicados | announcementsByStudent
 Perguntas respondidas | num_answers
 
-3.
+3. Professores
+
+Coluna | Parâmetro
+------------ | -------------
+Foto | teacher.profile.photoUrl
+Nome | teacher.profile.name.fullName
+E-mail | teacher.profile.emailAddress
+Turmas | courses_name
+Alunos | num_students
+Número de anúncios | num_announcements
+Tarefas enviadas | num_assignments
+Perguntas respondidas | ?
+
+## Use, compartilhe e colabore:
+
+* **Achou legal esse trabaho?**
+Compartilhe com seus grupos e redes sociais.
+
+* **Quer sugerir melhorias?**
+Mande a sua sugestão para o e-mail info@poll.is
+
+* **Encontrou um erro?**
+[lRegistre um bug (problema)](https://github.com/poll-is/gerador-de-relatorios/issues)
+
