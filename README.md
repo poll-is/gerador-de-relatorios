@@ -11,6 +11,8 @@ https://docs.google.com/spreadsheets/d/1W7aiFi-2o6jtOwM2oLmcI9DHjqRdftnhCWJyQgj6
 
 ![Clique em Gerar relatório](https://github.com/poll-is/gerador-de-relatorios/blob/master/gerador-de-relatorios-classroom.png?raw=true)
 
+
+
 ## Organização dos dados por planilha:
 
 1. Salas de aula
@@ -52,6 +54,8 @@ Número de anúncios | num_announcements
 Tarefas enviadas | num_assignments
 Perguntas respondidas | ?
 
+
+
 ## Use, compartilhe e colabore:
 
 * **Achou legal esse trabaho?**
@@ -61,5 +65,12 @@ Compartilhe com seus grupos e redes sociais.
 Mande a sua sugestão para o e-mail info@poll.is
 
 * **Encontrou um erro?**
-[lRegistre um bug (problema)](https://github.com/poll-is/gerador-de-relatorios/issues)
+[Registre um bug (problema)](https://github.com/poll-is/gerador-de-relatorios/issues)
 
+
+
+## Futuras melhorias e novos recursos
+
+- [ ] Adicionar foto na planilha
+- [ ] Integrar com o Google Data Studio
+- [ ] Definir indicadores e configuração de valores
