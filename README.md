@@ -14,3 +14,13 @@ https://docs.google.com/spreadsheets/d/1W7aiFi-2o6jtOwM2oLmcI9DHjqRdftnhCWJyQgj6
 ## Organização dos dados:
 
 1. Salas de aula
+Coluna | Parâmetro
+------------ | -------------
+Nome da turma | course.name
+Sala | course.room
+Nome do professor | teacher_names
+Número de alunos | students.length
+Média Grade/100 | average_grade
+Número de atividades | assignments.regular.length
+Número de perguntas | assignments.multipleChoice.length
+Número de Anúncios | announcements.length
