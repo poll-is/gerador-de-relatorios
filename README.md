@@ -11,9 +11,10 @@ https://docs.google.com/spreadsheets/d/1W7aiFi-2o6jtOwM2oLmcI9DHjqRdftnhCWJyQgj6
 
 ![Clique em Gerar relatório](https://github.com/poll-is/gerador-de-relatorios/blob/master/gerador-de-relatorios-classroom.png?raw=true)
 
-## Organização dos dados:
+## Organização dos dados por planilha:
 
 1. Salas de aula
+
 Coluna | Parâmetro
 ------------ | -------------
 Nome da turma | course.name
@@ -24,3 +25,6 @@ Média Grade/100 | average_grade
 Número de atividades | assignments.regular.length
 Número de perguntas | assignments.multipleChoice.length
 Número de Anúncios | announcements.length
+
+2. Alunos
+
