@@ -28,3 +28,15 @@ Número de Anúncios | announcements.length
 
 2. Alunos
 
+Coluna | Parâmetro
+------------ | -------------
+Foto | student.profile.photoUrl
+Nome | student.profile.name.fullName
+E-mail | student.profile.emailAddress
+Turmas | courses
+Média das notas | student.avgGrade
+Atribuições | num_assignments
+Comunicados | announcementsByStudent
+Perguntas respondidas | num_answers
+
+3.
