@@ -12,6 +12,8 @@ https://docs.google.com/spreadsheets/d/1W7aiFi-2o6jtOwM2oLmcI9DHjqRdftnhCWJyQgj6
 ![Clique em Gerar relatório](https://github.com/poll-is/gerador-de-relatorios/blob/master/gerador-de-relatorios-classroom.png?raw=true)
 
 
+**ATENÇÃO:** Esse script de aplicativos não foi verificado pelo Google. Ao solicitar a geração do relatório, ele irá apresentar **avisos de aplicativo não verificado**. Estamos em processo de verificação do aplicativos.
+
 
 ## Organização dos dados por planilha:
 
